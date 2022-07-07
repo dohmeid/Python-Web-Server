@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ar"  dir="rtl">
+
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<meta http-equiv="X-UA-Compatible" content="ie=edge">-->
+    
+    <title lang="ar"  dir="rtl"> سيرفر ويب بسيط-ENCS3320</title>
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        html{
+            --color1: #161853;
+            --color2: #292C6D;
+            --color3: #FAEDF0;
+            --color4: #EC255A;
+        }
+        body{
+            background-color: var(--color3);
+            height:auto;
+            width:auto;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        header{
+            height:70vh;
+            background-color: var(--color3);
+        }
+        header img{
+            text-align: center;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: auto;
+            padding-top:105px;
+        }
+        h1{
+            width:fit-content;
+            padding-top: 50px;
+            margin: auto;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h1 p {
+        color: blue;
+        font-size: 25px;
+        }
+        
+        .button{
+            margin: auto;
+            height: 50px;
+            margin-top:30px;
+            width: fit-content;
+            padding-top: 30px;
+            margin-left: 20px;
+        }
+        a{
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: none;
+            background-color: var(--color4);
+            padding: 5px 15px;
+            color:  var(--color3);
+        }
+        .b2{
+        margin-left: 5px;
+        }
+        .dima{
+            background-color: var(--color2);
+            height:70vh;
+           margin: 10px 20px;
+           color: var(--color3);
+           padding-top:35px ;
+           padding-right: 50px;
+           
+        }
+        .dima h3, .doha h3{
+            padding-bottom: 30px;
+        }
+        .dima h4, .doha h4{
+            text-transform: uppercase;
+            padding-top: 40px;
+        }
+        .doha{
+            background-color: var(--color4);
+            height:70vh;
+            margin: 10px 20px;
+            padding-top:25px ;
+            padding-right: 50px;
+            color: var(--color3);
+        }
+
+        .decor{
+           float:right;
+            width:60%;
+        }
+        footer{
+            margin-top: 35px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .link{
+            color: var(--color3);
+            background-color: var(--color1);
+            
+        }
+        
+        .p1 , .decor2{
+            display: inline-block;
+        }
+        .p1{
+            margin-left: 0px;
+            padding-right: 410px;
+        }
+        .p2{
+            padding-top:80px;
+        }
+    </style>
+
+
+
+  </head>
+
+  <body>
+      <header>
+        <img src="./bzulogo1.png" width="400" height="150" alt="bzulogo" >
+
+          <h1> أهلا بكم في مساق
+            <p> شبكات الحاسوب</p>
+          </h1>
+
+          <div class="button">
+            <a href="#dima" > ديما</a>
+            <a href="#doha" class="b2" > ضحى</a>
+        </div>
+        </header>
+
+
+	    <div class="dima" id="dima" >
+            <section class="decor2">
+            <h2>ديما طقاطقة</h2>
+            <h3>1191818</h3>
+
+            <h4>المهارات</h4>
+            <ul class="skills">
+                <li>االغة التركية</li>
+                <li>الطباعة</li>
+                <li>حل المشاكل البرمجية</li>
+            </ul>
+
+            <h4>الهوايات</h4>
+            <ul class="hobbies">
+                <li>كرة الطائرة</li>
+                <li>الموسيقى</li>
+                <li>الطبخ</li>
+            </ul>
+
+            <h4>المشاريع</h4>
+            <ul class="projects">
+                <li>  نظام إدارة سجلات الطلاب   
+                    <p>مشروع باستخدام لغة shell لمساق ENCS3310</p>
+                </li>
+
+                <li> بناء دائرة متكاملة مكونة من  8 بت لcomparator
+                    <p>مشروع معد لمساق ENCS3310 للأنظمة الرقمية المتقدمة باستخدام لغة برمجة  VHDl</p>
+                </li>
+            </ul>
+        </section>
+        <img src="./pic1.jpg" width="530" height="260" alt="bzulogo" class="p1" >
+
+        </div>
+
+
+        <div class="doha" id="doha" >
+            <img src="./pic2.jpg" width="530" height="330" alt="bzulogo" class="p2">
+            <section class="decor">
+            <h2>ضحى حميد</h2>
+            <h3>1190120</h3>
+            <h4>المهارات</h4>
+            <ul class="skills">
+                <li>البرمجة</li>
+                <li>البحث في غوغل</li>
+                <li>اللغة الانجليزية</li>
+            </ul>
+            <h4>الهوايات</h4>
+            <ul class="hobbies">
+                <li>الموسيقى</li>
+                <li>التصوير</li>
+                <li>السفر</li>
+            </ul>
+            <h4>المشاريع</h4>
+            <ul class="projects">
+                <li> محاكاة إدارة الذاكرة الافتراضية
+                    <p>مشروع معد لمساق ENCS3390 أنظمة التشغيل. يوضح مفهوم إدارة الذاكرة الافتراضية في المحاكاة و تتضمن عدة جوانب ومفاهيم لنظم التشغيل.</p>
+                </li>
+
+                <li> نظام إدارة التبرع بالدم
+                    <p>مشروع تم إعداده لمساق COMP333 لأنظمة قواعد البيانات باستخدام جافا و SQL. يهدف إلى توفير 
+                        طريقة بسيطة وفعالة لإدارة عملية التبرع وتسهيل الوصول إليها
+                        إلى وحدات الدم في بنك الدم المركزي الفلسطيني في رام الله</p>
+                </li>
+            </ul>
+        </section>
+        </div>
+  </body>
+<footer>
+    <a class="link" href="https://www.w3schools.com/tags/att_img_src.asp" target=”_blank”> رابط للانتقال لملف html المحلي</a>
+</footer>
+
+</html>

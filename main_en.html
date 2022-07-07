@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ENCS3320-Simple Webserver</title>
+   <!--
+    <link rel="stylesheet" href="style.css">
+   --> 
+    <style>
+        *{
+            padding:0;
+            margin:0;
+        }
+        html{
+            --color1: #161853;
+            --color2: #292C6D;
+            --color3: #FAEDF0;
+            --color4: #EC255A;
+        }
+        body{
+            background-color: var(--color3);
+            height:auto;
+            width:auto;
+            font-family: 'Cormorant Garamond', serif;
+        }
+        
+        header{
+            height:70vh;
+            background-color: var(--color3);
+        }
+        
+        header img{
+            text-align: center;
+           
+            display: block;
+          margin-left: auto;
+          margin-right: auto;
+          width: auto;
+          padding-top:105px;
+        }
+        
+        h1{
+            letter-spacing:10px ;
+            width:fit-content;
+            padding-top: 50px;
+            margin: auto;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        h1 p {
+        color: blue;
+        font-size: 25px;
+        }
+        
+        
+        .button{
+            margin: auto;
+            height: 30px;
+            margin-top:30px;
+            width: fit-content;
+            padding-top: 10px;
+            
+        }
+        a{
+            font-weight: bold;
+            font-style: ital;
+            text-decoration: none;
+            background-color: var(--color4);
+            padding: 5px 10px;
+            color:  var(--color3);
+        }
+        .b2{
+        margin-left: 60px;
+        }
+        
+        
+        
+        .dima{
+            background-color: var(--color2);
+            height:70vh;
+           margin: 10px 20px;
+           color: var(--color3);
+           padding-top:25px ;
+           padding-left: 50px;
+        }
+        
+        .dima h3, .doha h3{
+            padding-bottom: 30px;
+        }
+        .dima h4, .doha h4{
+            text-transform: uppercase;
+            padding-top: 20px;
+        }
+        
+        
+        .doha{
+            background-color: var(--color4);
+            height:70vh;
+            margin: 10px 20px;
+            padding-top:25px ;
+            padding-left: 50px;
+            color: var(--color3);
+        }
+        
+        .decor{
+           
+           float:right;
+            width:60%;
+        }
+        
+        footer{
+            
+            margin-top: 35px;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        .link{
+            color: var(--color3);
+            background-color: var(--color1);
+            
+        }
+        
+        .p1 , .decor2{
+            display: inline-block;
+        }
+        .p1{
+            margin-left: 150px;
+        }
+        .p2{
+            padding-top:80px;
+        }
+    </style>
+  </head>
+
+  <body>
+      <header>
+        <img src="./bzulogo1.png" width="400" height="150" alt="bzulogo" >
+
+          <h1>Welcome to our course
+            <p> Computer Networks</p>
+          </h1>
+
+          <div class="button">
+            <a href="#dima" > DIMA</a>
+            <a href="#doha" class="b2" > DOHA</a>
+        </div>
+        </header>
+
+
+	    <div class="dima" id="dima" >
+            <section class="decor2">
+            <h2>DIMA TAQATQA</h2>
+            <h3>1191818</h3>
+
+            <h4>Skills</h4>
+            <ul class="skills">
+                <li>Turkish language</li>
+                <li>Typing</li>
+                <li>Problem Solving</li>
+            </ul>
+
+            <h4>hobbies</h4>
+            <ul class="hobbies">
+                <li>vollyball</li>
+                <li>Music</li>
+                <li>Cooking</li>
+            </ul>
+
+            <h4>projects</h4>
+            <ul class="projects">
+                <li> Student Records Management System
+                    <p>A shell scripting project made for linux ENCS3310 course</p>
+                </li>
+
+                <li> 8-bit IC comparator
+                    <p>A project made for advanced digital systems ENCS3310 course using VHDl high programming language</p>
+                </li>
+            </ul>
+        </section>
+        <img src="./pic1.jpg" width="530" height="260" alt="img1" class="p1" >
+
+        </div>
+
+
+        <div class="doha" id="doha" >
+            <img src="./pic2.jpg" width="530" height="330" alt="img2" class="p2">
+            <section class="decor">
+            <h2>DOHA HMEID</h2>
+            <h3>1190120</h3>
+            <h4>Skills</h4>
+            <ul class="skills">
+                <li>Coding</li>
+                <li>Googling</li>
+                <li>English</li>
+            </ul>
+            <h4>hobbies</h4>
+            <ul class="hobbies">
+                <li>Music</li>
+                <li>Photography</li>
+                <li>Travelling</li>
+            </ul>
+            <h4>projects</h4>
+            <ul class="projects">
+                <li> Virtual Memory Management Simulation
+                    <p>A project made for Operating Systems ENCS3390 course. It illustrates the 
+                        concept of virtual memory management in a simulation that includes several aspects and concepts of an Operating System.</p>
+                </li>
+
+                <li> Blood Donation Management System
+                    <p>A project made for Database Systems COMP333 course using java & SQL. It aims to provide a 
+                        simple and effective way to manage the donation operation and to ease access 
+                        to blood units at the central Palestinian blood bank at Ramallah</p>
+                </li>
+            </ul>
+        </section>
+        </div>
+  </body>
+<footer>
+    <a class="link" href="https://www.w3schools.com/tags/att_img_src.asp" target=”_blank”>link to a local html file</a>
+</footer>
+
+</html>
